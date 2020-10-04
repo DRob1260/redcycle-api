@@ -1,0 +1,6 @@
+version: "3"
+services:
+  redcycle-api:
+    build: .
+    ports: ['2627:80']
+    volumes: ['./:/app']
