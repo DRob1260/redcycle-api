@@ -1,0 +1,36 @@
+How to set up local development environment for project FOR LINUX/MAC OS ONLY
+1. install pip
+	python3 -m pip install --user --upgrade pip
+	check version with python3 -m pip --version
+
+2. install virtualenv
+	python3 -m pip install --user virtualenv
+
+3. create your virtual environment		It is always recommended to use a virtual environment while developing Python applications.
+	create a folder called IT326Project. In this folder create the venv with the following command.
+	python3 -m venv env
+
+4. when working in the virtual environment use the following command in the root of your project directory to activate it.
+	source env/bin/activate
+	this should put a (env) at the beginning of your user name in the terminal
+
+5. simply type deactivate to deactivate the env
+
+
+source: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+
+PART 2 django setup
+
+1. install Django
+	pip install Django
+
+2. get database running
+	python manage.py migrate
+
+3. check to see if server is runnning
+	python manage.py runserver
+
+4. go to server using link and check if server is running
+
+https://youtu.be/9Wbfk16jEOk?list=PLD7c29QMIBWdEgYu4FvDuxxEBWYCNpks9&t=372 continue from here
