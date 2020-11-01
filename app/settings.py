@@ -25,8 +25,9 @@ SECRET_KEY = 'rbdyx=5*5*g9$o2)c2jv9#$0xs=k3xhxyltrj6!z&r-e^0w=ys'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "localhost", "redcycle-api"]
 
+CSRF_COOKIE_SECURE=False
 
 # Application definition
 
@@ -117,4 +118,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/redcycle-api/static/'

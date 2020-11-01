@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('helloworld.urls'))
+    path('redcycle-api/admin/', admin.site.urls),
+    path('redcycle-api/hello-world', include('helloworld.urls'))
 ]
