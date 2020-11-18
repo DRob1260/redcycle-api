@@ -25,7 +25,7 @@ SECRET_KEY = 'rbdyx=5*5*g9$o2)c2jv9#$0xs=k3xhxyltrj6!z&r-e^0w=ys'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1", "localhost", "redcycle-api"]
+ALLOWED_HOSTS = ["*"]
 
 CSRF_COOKIE_SECURE=False
 
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'helloworld'
+    'redcycle.apps.RedcycleConfig'
 ]
 
 MIDDLEWARE = [
