@@ -1,10 +1,10 @@
 from django.db import models
-import uuid
-from .Account import Account
-from ..enums.StateEnum import StateEnum
+from uuid import uuid4
+from .Account import *
+from ..enums.StateEnum import *
 
 class Location(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid.uuid4)
+    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid4)
     street = models.CharField(max_length=100, null=True)
     city = models.CharField(max_length=100)
     postalCode = models.CharField(max_length=6)

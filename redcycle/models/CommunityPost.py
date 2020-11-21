@@ -1,11 +1,11 @@
 from django.db import models
-import uuid
-from .Account import Account
-from .Location import Location
-from ..enums.CategoryEnum import CategoryEnum
+from uuid import uuid4
+from .Account import *
+from .Location import *
+from ..enums.CategoryEnum import *
 
 class CommunityPost(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid.uuid4)
+    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid4)
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=1000)
     creationDate = models.DateTimeField()
