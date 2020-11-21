@@ -1,8 +1,8 @@
 from django.db import models
-import uuid
+from uuid import uuid4
 
 class Account(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid.uuid4)
+    id = models.UUIDField(primary_key=True, editable=False, unique=True, default=uuid4)
     firstName = models.CharField(max_length=100)
     lastName = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
