@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'redcycle.apps.RedcycleConfig'
+    'redcycle.apps.RedcycleConfig',
+    'ui'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+APPEND_SLASH=False

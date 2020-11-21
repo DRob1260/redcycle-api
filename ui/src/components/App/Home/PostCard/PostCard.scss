@@ -1,0 +1,23 @@
+.PostCard .card {
+    background-color: #385170;
+    border-radius: 15px;
+    border-color: gray;
+}
+
+.PostCard .card .xs {
+
+}
+
+.PostCard img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.PostCard .card-title {
+    color: white;
+}
+
+.PostCard .card-text {
+    color: lightgray;
+    text-align: left;
+}
