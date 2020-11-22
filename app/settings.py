@@ -57,7 +57,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,7 +66,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-        },
+        }
     },
 ]
 
@@ -128,3 +128,5 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'redcycle.User'
+
+LOGIN_REDIRECT_URL = '/redcycle/post-creator'

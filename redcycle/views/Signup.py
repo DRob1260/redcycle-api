@@ -1,4 +1,3 @@
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
 from ..forms.CustomUserCreationForm import *
@@ -15,4 +14,4 @@ def Signup(request):
             return redirect('/redcycle/post-creator')
     else:
         form = CustomUserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'registration/signup.html', {'form': form})

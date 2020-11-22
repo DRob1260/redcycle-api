@@ -13,5 +13,6 @@ router.register(r'/communityPosts', CommunityPostViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('/signup', Signup, name='signup')
+    path('/account/', include('django.contrib.auth.urls')),
+    path('/account/signup', Signup, name='signup'),
 ]
