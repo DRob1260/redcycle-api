@@ -1,6 +1,6 @@
 from django.db import models
 from uuid import uuid4
-from .Account import *
+from .User import *
 from ..enums.StateEnum import *
 
 class Location(models.Model):
@@ -10,6 +10,6 @@ class Location(models.Model):
     postalCode = models.CharField(max_length=6)
     state = models.CharField(max_length=2, choices=StateEnum.choices(), default=StateEnum.IL)
     description = models.CharField(max_length=200, null=True)
-    authorId = models.ForeignKey(Account, on_delete=models.CASCADE)
+    authorId = models.ForeignKey(User, on_delete=models.CASCADE)
     def __str__(self):
         return self.city + ", " + self.state + " " + self.postalCode

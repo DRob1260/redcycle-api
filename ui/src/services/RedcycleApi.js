@@ -1,4 +1,6 @@
 import axios from 'axios';
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
 export const getCommunityPosts = () => {
   return new Promise((resolve, reject) => {
@@ -16,6 +18,10 @@ export const getCommunityPosts = () => {
 
 export const postCommunityPost = (communityPost) => {
   return new Promise((resolve, reject) => {
-    axios.post('/redcycle/api/')
+    axios.post('/redcycle/api/communityPosts/', communityPost).then(() => {
+      resolve();
+    }).catch((error) => {
+      reject(error);
+    });
   });
 }
