@@ -1,0 +1,15 @@
+.Navigator {
+    .navbar {
+        background-color: #CE1126;
+        a {
+            color: white;
+        }
+
+        .navbar-brand {
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}

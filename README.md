@@ -1,12 +1,12 @@
 # redcycle-api
 
 ### Development
+Note: if it's the first time running the project OR if you make any change to the UI, you will need to run `npm run dev` within the `ui` directory to rebuild it.
 
 #### Run using Docker
 * Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) if they are not already installed.
 * Run `docker-compose up --build`. It may take a while for the first build. 
 * API will be running at 0.0.0.0:8000.
-
 
 #### Run using Python
 Note: these instructions are for a unix environment (not Windows).
