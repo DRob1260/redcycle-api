@@ -24,4 +24,24 @@ export const postCommunityPost = (communityPost) => {
       reject(error);
     });
   });
+};
+
+export const getLocations = () => {
+  return new Promise((resolve, reject) => {
+    axios.get('/redcycle/api/locations/').then(() => {
+      resolve();
+    }).catch((error) => {
+      reject(error);
+    });
+  });
+}
+
+export const postLocation = (location) => {
+  return new Promise((resolve, reject) => {
+    axios.post('/redcycle/api/locations/', location).then(() => {
+      resolve();
+    }).catch((error) => {
+      reject(error);
+    });
+  });
 }
