@@ -7,5 +7,6 @@ services:
       dockerfile: dev.Dockerfile
     volumes:
       - .:/code
+      - /code/node_modules
     ports:
       - "8000:8000"
