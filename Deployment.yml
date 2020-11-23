@@ -15,8 +15,8 @@ spec:
         app: redcycle-api
     spec:
       containers:
-        - name: redcycle-api
-          image: projectredcycle/redcycle-api:latest
-          ports:
-            - containerPort: 8000
+      - name: redcycle-api
+        image: projectredcycle/redcycle-api:latest
+        ports:
+        - containerPort: 8000
 
