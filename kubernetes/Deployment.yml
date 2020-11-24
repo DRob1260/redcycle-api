@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redcycle-api-deployment
+  name: redcycle
   labels:
     app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: redcycle-api
+      app: redcycle
   template:
     metadata:
       labels:
-        app: redcycle-api
+        app: redcycle
     spec:
       containers:
-      - name: redcycle-api
+      - name: redcycle
         image: projectredcycle/redcycle-api:latest
         ports:
         - containerPort: 8000

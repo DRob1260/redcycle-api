@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redcycle-service
+  namespace: drew-robert-site
+spec:
+  type: ClusterIP
+  ports:
+    - name: redcycle-port
+      port: 2602
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: redcycle
