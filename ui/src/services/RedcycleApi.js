@@ -93,7 +93,7 @@ export const deleteLocation = (locationId) => {
     }).catch((error) => {
       reject(error);
     });
-  }
+  });
 }
 
 export const getUser = (userId) => {
