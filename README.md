@@ -4,11 +4,12 @@
 
 #### Endpoints
 * User-facing application: `/redcycle`
+* Admin application: `/redcycle/admin`
 * Account actions
   * Signup: `/redcycle/api/account/signup`
   * Login: `/redcycle/api/account/login`
   * Password change: `/redcycle/api/account/password_change`
-* Admin application: `/redcycle/admin`
+  * GET `/redcycle/api/account/current`
 * REST endpoints:
   * GET, POST `/redcycle/api/users`
   * GET, POST `/redcycle/api/locations`
