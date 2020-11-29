@@ -8,7 +8,7 @@ from ..models.User import *
 class UserView(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('firstName')
     serializer_class = UserSerializer
-    filterset_fields = ['id']
+    filterset_fields = ['id', 'email']
 
 class CurrentUserView(views.APIView):
     def get(self, request):
