@@ -1,4 +1,4 @@
-import { addUser } from "../../support/RedcycleApiDelegator";
+import { postUser } from "../../support/RedcycleApiDelegator";
 
 context('delete a user', () => {
   const user = {
@@ -10,7 +10,7 @@ context('delete a user', () => {
   };
 
   before(() => {
-    addUser(user);
+    postUser(user);
     cy.visit('/redcycle/admin/redcycle/user');
     cy.get('#id_username').type(Cypress.env('ADMIN_USERNAME'));
     cy.get('#id_password').type(Cypress.env('ADMIN_PASSWORD'));
@@ -20,5 +20,11 @@ context('delete a user', () => {
   it('can delete a user', () => {
     // click on test user from list of users
     cy.get('#result_list').contains('testy@mcface.com').click();
+    // click on 'Delete' button
+    cy.get('.deletelink').click();
+    // click on 'Yes, I'm sure' button
+    cy.get('[type="submit"]').click();
+    // verify that success message is displayed
+    cy.contains('The user “testy@mcface.com” was deleted successfully.')
   });
 });
