@@ -47,8 +47,7 @@ Note: these instructions are for a unix environment (not Windows).
 #### Tests
 Automated testing is implemented using Cypress.
 
-In the `ui` directory:
-```
-npm run cypress
-```
+* Start API: `docker-compose up --build`
+* Go to `ui` directory: `cd ui`
+* Start Cypress: `npm run cypress`
 
