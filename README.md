@@ -44,3 +44,11 @@ Note: these instructions are for a unix environment (not Windows).
 * `python manage.py runserver`
 * Server should be running.
 
+#### Tests
+Automated testing is implemented using Cypress.
+
+In the `ui` directory:
+```
+npm run cypress
+```
+
