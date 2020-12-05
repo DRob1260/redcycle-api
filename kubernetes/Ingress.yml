@@ -10,5 +10,5 @@ spec:
         paths:
           - path: /redcycle
             backend:
-              serviceName: redcycle-service
-              servicePort: redcycle-port
+              serviceName: redcycle-api
+              servicePort: 8000

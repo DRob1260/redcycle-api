@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52f8fbbb-75a5-4f1c-8fb0-91c6b13cacd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes/Ingress.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/Ingress.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ijukie1aRLwbt34Q2bY9K2UQdV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redcycle/models" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52f8fbbb-75a5-4f1c-8fb0-91c6b13cacd3" name="Default Changelist" comment="" />
+      <created>1602433466682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602433466682</updated>
+      <workItem from="1602433468240" duration="620000" />
+      <workItem from="1602434839009" duration="1749000" />
+      <workItem from="1603475236398" duration="78000" />
+      <workItem from="1605040127102" duration="371000" />
+      <workItem from="1605040748737" duration="577000" />
+      <workItem from="1605320614120" duration="9064000" />
+      <workItem from="1606677419586" duration="5324000" />
+      <workItem from="1606968873782" duration="7981000" />
+    </task>
+    <task id="LOCAL-00001" summary="allow all hosts">
+      <created>1605489955425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605489955425</updated>
+    </task>
+    <task id="LOCAL-00002" summary="reorganize models">
+      <created>1605491180489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605491180489</updated>
+    </task>
+    <task id="LOCAL-00003" summary="start test organization">
+      <created>1605668609509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605668609509</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor models">
+      <created>1605672153077</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605672153077</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor models">
+      <created>1605672181428</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605672181428</updated>
+    </task>
+    <task id="LOCAL-00006" summary="wip commit">
+      <created>1606682818341</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606682818341</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit db">
+      <created>1606684264572</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606684264572</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update readme">
+      <created>1606969719282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606969719282</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update readme">
+      <created>1606972009871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606972009871</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update deployment file">
+      <created>1607187050743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607187050743</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="allow all hosts" />
+    <MESSAGE value="reorganize models" />
+    <MESSAGE value="start test organization" />
+    <MESSAGE value="refactor models" />
+    <MESSAGE value="wip commit" />
+    <MESSAGE value="commit db" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="update deployment file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update deployment file" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3614" y="429" key="RollbackChangesDialog" timestamp="1607195354836">
+      <screen x="2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1506" y="429" key="RollbackChangesDialog/-5120.0.2560.1440/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1605489619403" />
+    <state x="3614" y="429" key="RollbackChangesDialog/5120.0.2560.1440/2560.0.2560.1440/0.0.2560.1440@2560.0.2560.1440" timestamp="1607195354836" />
+    <state x="3440" y="447" key="Vcs.Push.Dialog.v2" timestamp="1607187052618">
+      <screen x="2560" y="0" width="2560" height="1440" />
+    </state>
+    <state x="-1680" y="447" key="Vcs.Push.Dialog.v2/-5120.0.2560.1440/-2560.0.2560.1440/0.0.2560.1440@-2560.0.2560.1440" timestamp="1605491186238" />
+    <state x="3440" y="447" key="Vcs.Push.Dialog.v2/5120.0.2560.1440/2560.0.2560.1440/0.0.2560.1440@2560.0.2560.1440" timestamp="1607187052618" />
+  </component>
+</project>
