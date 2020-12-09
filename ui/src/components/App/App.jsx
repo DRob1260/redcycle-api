@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Navigator } from './Navigator/Navigator';
 import { Home } from './Home/Home';
 import { PostCreator } from './PostCreator/PostCreator';
-import { Login } from './Login/Login';
+
 
 
 export const App = () => {

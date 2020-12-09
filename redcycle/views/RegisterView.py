@@ -11,7 +11,7 @@ def RegisterView(request):
 		user.save()
 		new_user = authenticate(email = user.email, password = password)
 		login(request, new_user)
-		return redirect("/redcycle/api/account/login")
+		return redirect("/redcycle/api/account/signin")
 	return render(request, "registration/form.html", {
 		"title" : "Register",
 		"form" : form

@@ -20,7 +20,7 @@ const Navigator = () => {
           <Nav>
             <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/register">Sign Up </a>
             </Nav>
-            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/login">Log in</a>
+            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/signin">Log in</a>
             </Nav>
             <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/logout">Log out</a>
             </Nav>
