@@ -18,7 +18,11 @@ const Navigator = () => {
             <Nav.Link><Link to={'/redcycle/post-creator'}>Post Creator</Link></Nav.Link>
           </Nav>
           <Nav>
-            <Nav><a target="_blank" href="http://127.0.0.1:8000/redcycle/api/account/login/">Log in</a>
+            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/register">Sign Up </a>
+            </Nav>
+            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/login">Log in</a>
+            </Nav>
+            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/logout">Log out</a>
             </Nav>
           </Nav>
         </Navbar.Collapse>
