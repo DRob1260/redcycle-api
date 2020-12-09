@@ -11,7 +11,7 @@ def SignupView(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(email=email, password=raw_password)
             login(request, user)
-            return redirect('/redcycle/post-creator')
+            return redirect('/redcycle')
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/signup.html', {'form': form})
