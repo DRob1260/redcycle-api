@@ -17,41 +17,13 @@ const mockCommunityPost = {
   "locationId": "9a20f75f-c751-467f-8a1a-3614243c4248"
 }
 
-
-// const handlePost = (event) => {
-//   // const uID = urlQueryParams.get('id');
-//   // Title = event.target.Title.value;
-//   // Description = event.target.Description.value;
-//   // Category = event.target.Category.value;
-//   // mockCommunityPost = {
-//   //       "title": Title,
-//   //       "description": Description,
-//   //       "creationDate": today,
-//   //       "available": true,
-//   //       "category": Category,
-//   //       "authorId": uID,
-//   //       "locationId": "9a20f75f-c751-467f-8a1a-3614243c4248"
-//   //     }
-//   postCommunityPost(mockCommunityPost);
-// };
-
-
-
 export const PostCreator = () => {
   const urlQueryParams = useQuery();
   const username = urlQueryParams.get('username');
-  const uID = urlQueryParams.get('id');
-  // Title = event.target.Title.value;
-  // Description = event.target.Description.value;
-  // Category = event.target.Category.value;
+
   return (
     <div className={'PostCreator'}>
-      <form onSubmit ={() => {postCommunityPost(mockCommunityPost)}}>
-        <input type="text" name="Title" placeholder="Title" />
-        <input type="text" name="Description" placeholder="Description" />
-        <input type="text" name="Category" placeholder="Category"/>
-        <button type="submit">Post</button>
-    </form>
+      <button onClick={() => {postCommunityPost(mockCommunityPost)}}>Post</button>
     </div>
   );
 };
