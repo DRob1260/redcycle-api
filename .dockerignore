@@ -2,3 +2,7 @@ ui/node_modules
 ui/.npm
 ui/npm-debug.log
 ui/__pycache__
+
+
+# Ignore devspace.yaml file to prevent image rebuilding after config changes
+devspace.yaml

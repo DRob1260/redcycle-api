@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from ..serializers.LocationSerializer import *
 from ..models.Location import *
 
-class LocationViewSet(viewsets.ModelViewSet):
-    queryset = Location.objects.all().order_by('state')
+class LocationView(viewsets.ModelViewSet):
+    queryset = Location.objects.all()
     serializer_class = LocationSerializer
+    filterset_fields = ['authorId']
