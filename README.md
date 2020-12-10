@@ -4,17 +4,16 @@
 
 #### Endpoints
 * User-facing application: `/redcycle`
-* Admin application: `/redcycle/admin`
+* Admin application: `/redcycle/admin/`
 * Account actions
   * Signup: `/redcycle/api/account/register`
   * Login: `/redcycle/api/account/signin`
   * Logout: `/redcycle/api/account/logout`
-  * Password change: `/redcycle/api/account/password_change`
   * GET `/redcycle/api/account/current`
 * REST endpoints:
-  * GET, POST `/redcycle/api/users`
+  * GET, POST `/redcycle/api/users/`
   * GET, POST `/redcycle/api/locations`
-  * GET, POST `/redcycle/api/communityPosts`
+  * GET, POST `/redcycle/api/communityPosts/`
 
 ### Development
 Note: if it's the first time running the project run `npm install` then run `npm run dev` OR if you make any change to the UI, you will need to run `npm run dev` within the `ui` directory to rebuild it.
