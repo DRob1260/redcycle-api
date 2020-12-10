@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import './PostCreator.scss';
 import { postCommunityPost } from '../../../services/RedcycleApi';
-import { Form, Tab, Tabs } from 'react-bootstrap'
+import { Form, Tab, Tabs, Button } from 'react-bootstrap'
 import { getCommunityPostsFromUser } from '../../../services/RedcycleApi';
 import { PostCard } from './PostCard/PostCard';
 import { getCurrentUser } from '../../../services/RedcycleApi';
@@ -77,7 +77,7 @@ export const PostCreator = () => {
           </Form.Control>
         </Form.Group>
       </Form>
-      <button onClick={() => {submitCommunity()}}>Post</button>
+      <Button variant="danger" onClick={() => {submitCommunity()}}>Post</Button>
       </Tab>
     </Tabs>
     </div>
