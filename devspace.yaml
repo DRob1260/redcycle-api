@@ -1,7 +1,7 @@
 version: v1beta9
 images:
   app:
-    image: drob1260/redcycleapi
+    image: projectredcycle/redcycle-api
     dockerfile: prod.Dockerfile
     preferSyncOverRebuild: true
     injectRestartHelper: true
@@ -13,7 +13,7 @@ deployments:
     componentChart: true
     values:
       containers:
-      - image: drob1260/redcycleapi
+      - image: projectredcycle/redcycle-api
       service:
         ports:
         - port: 8000
