@@ -6,13 +6,14 @@ import './Navigator.scss'
 const Navigator = () => {
   return (
     <div className={'Navigator'} data-testid={'Navigator'}>
-      <Navbar variant={'dark'}>
+      <Navbar variant={'dark'} expand={"md"}>
         <Navbar.Brand>
           <Link to={'/redcycle'}>
             {'Redcycle'}
           </Link>
         </Navbar.Brand>
-        <Navbar.Collapse>
+        <Navbar.Toggle aria-controls="navbar" />
+        <Navbar.Collapse id={"navbar"}>
           <Nav className="mr-auto">
             <Nav.Link><Link to={'/redcycle'}>Home</Link></Nav.Link>
             <Nav.Link><Link to={'/redcycle/post-creator'}>Post Creator</Link></Nav.Link>
