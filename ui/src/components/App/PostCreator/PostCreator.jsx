@@ -1,15 +1,25 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState } from 'react';
 import './PostCreator.scss';
 import { postCommunityPost } from '../../../services/RedcycleApi';
 import { Form, Tab, Tabs } from 'react-bootstrap'
-
+import { getCommunityPostsFromUser } from '../../../services/RedcycleApi';
+import { PostCard } from './PostCard/PostCard';
+import { getCurrentUser } from '../../../services/RedcycleApi';
 
 export const PostCreator = () => {
   const [title, setTitle] = useState()
   const [description, setDescription] = useState()
   const [category, setCategory] = useState()
   const [currentTab, setCurrentTab] = useState("myPosts")
-  
+  const [posts, setPosts] = useState([]);
+  const [currentUser, setCurrentUser] = useState([]);
+
+    const refreshPosts = () => {
+        getCommunityPostsFromUser(currentUser.id).then((posts) => {
+            setPosts(posts)
+        })
+    }
+
   const submitCommunity = () => {
     const communityPost = {
       "title": title,
@@ -17,17 +27,32 @@ export const PostCreator = () => {
       "creationDate": new Date().toISOString(),
       "available": true,
       "category": category,
-      "authorId": "cdd356fb-c24a-4166-b86b-7120c7466e5b",
-      "locationId": "9a20f75f-c751-467f-8a1a-3614243c4248"
+      "authorId": currentUser.id,
+      "locationId": null
     }
-    postCommunityPost(communityPost).then( () => {setCurrentTab("myPosts")})
+      postCommunityPost(communityPost).then(() => { setCurrentTab("myPosts") })
+      refreshPosts()
   }
+
+    useEffect(() => {
+        getCurrentUser().then((user) => {
+            setCurrentUser(user)
+            getCommunityPostsFromUser(user.id).then((posts) => {
+                setPosts(posts)
+            })
+        })
+    }, []);
+
 
   return (
     <div className={'PostCreator'}>
       <Tabs activeKey = {currentTab} onSelect={(eventKey) => setCurrentTab(eventKey)} id="uncontrolled-tab-example">
       <Tab eventKey="myPosts" title="My Community Posts">
-
+        {posts.map((post, index) => (
+            <React.Fragment key={`post-${index}`}>
+                <PostCard post={post} refreshPosts={refreshPosts} />
+            </React.Fragment>
+        ))}
       </Tab>
       <Tab eventKey="createPost" title="Create New Post">
       <Form>

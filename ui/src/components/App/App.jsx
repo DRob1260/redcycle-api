@@ -4,6 +4,7 @@ import { Navigator } from './Navigator/Navigator';
 import { Home } from './Home/Home';
 import { PostCreator } from './PostCreator/PostCreator';
 
+
 export const App = () => {
   return (
     <div className="App" data-testid={'App'}>

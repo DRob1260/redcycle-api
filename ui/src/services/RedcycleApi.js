@@ -108,7 +108,7 @@ export const getUser = (userId) => {
 
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
-    axios.get(`/redcycle/api/account/current/`).then((response) => {
+    axios.get(`/redcycle/api/account/current`).then((response) => {
       resolve(response.data);
     }).catch((error) => {
       reject(error);
