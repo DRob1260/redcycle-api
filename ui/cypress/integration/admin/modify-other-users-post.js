@@ -14,7 +14,7 @@ context("modify other user's post", () => {
 
   before(() => {
     putCommunityPost(communityPost);
-    cy.visit('/redcycle/admin/redcycle/communitypost');
+    cy.visit('/redcycle/admin/redcycle/communitypost/');
     cy.get('#id_username').type(Cypress.env('ADMIN_USERNAME'));
     cy.get('#id_password').type(Cypress.env('ADMIN_PASSWORD'));
     cy.get('.submit-row > input').click();
