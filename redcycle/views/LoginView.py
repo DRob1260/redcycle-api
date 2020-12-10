@@ -9,7 +9,7 @@ def LoginView(request):
 		password = form.cleaned_data.get("password")
 		user = authenticate(email = email, password = password)
 		login(request, user)
-		return redirect("/redcycle")
+		return redirect("/redcycle/post-creator")
 	return render(request, "registration/form.html", {
 		"form" : form,
 		"title" : "Login",
