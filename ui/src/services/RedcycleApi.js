@@ -18,7 +18,7 @@ export const getCommunityPosts = () => {
 
 export const getCommunityPostsFromUser = (userId) => {
   return new Promise((resolve, reject) => {
-    axios.get(`/redcycle/api/communityPosts?authorId=${userId}`).then((response) => {
+    axios.get(`/redcycle/api/communityPosts/?authorId=${userId}`).then((response) => {
       resolve(response.data);
     }).catch((error) => {
       reject(error);
