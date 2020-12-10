@@ -1,7 +1,7 @@
 env
 ui/node_modules
 ui/static
-
+__pycache__/
 
 # Ignore DevSpace cache and log folder
 .devspace/
