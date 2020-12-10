@@ -29,15 +29,14 @@ const PostCard = ({ post, refreshPosts }) => {
             {generateDescriptionPreview(post.description)}
           </p>
           <Button variant="danger" onClick={() => {
-            deleteCommunityPost(post.id)
-            refreshPosts()
+            deleteCommunityPost(post.id).then( () => refreshPosts())
           }}>Delete Post</Button> {" "}
           <Button variant="danger" onClick={handleShow}>
             Edit Post
           </Button>
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-              <Modal.Title>Modal heading</Modal.Title>
+              <Modal.Title>Edit Post</Modal.Title>
             </Modal.Header>
             <Modal.Body>
               <Form>

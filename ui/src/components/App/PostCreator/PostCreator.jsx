@@ -30,8 +30,9 @@ export const PostCreator = () => {
       "authorId": currentUser.id,
       "locationId": null
     }
-      postCommunityPost(communityPost).then(() => { setCurrentTab("myPosts") })
-      refreshPosts()
+      postCommunityPost(communityPost).then(() => { 
+        refreshPosts();
+        setCurrentTab("myPosts") })
   }
 
     useEffect(() => {
@@ -40,7 +41,7 @@ export const PostCreator = () => {
             getCommunityPostsFromUser(user.id).then((posts) => {
                 setPosts(posts)
             })
-        })
+        }).catch(() => window.location.href = '/redcycle/api/account/signin')
     }, []);
 
 
