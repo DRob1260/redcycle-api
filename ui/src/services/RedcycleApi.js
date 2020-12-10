@@ -36,6 +36,16 @@ export const postCommunityPost = (communityPost) => {
   });
 };
 
+export const deleteUserAccount = (userId) => {
+  return new Promise((resolve, reject) => {
+    axios.delete(`/redcycle/api/users/${userId}/`).then(() => {
+      resolve();
+    }).catch((error) => {
+      reject(error);
+    });
+  });
+};
+
 export const patchCommunityPost = (communityPost) => {
   return new Promise((resolve, reject) => {
     axios.patch(`/redcycle/api/communityPosts/${communityPost.id}/`, communityPost).then((updatedCommunityPost) => {
