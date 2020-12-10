@@ -16,14 +16,9 @@ const Navigator = () => {
           <Nav className="mr-auto">
             <Nav.Link><Link to={'/redcycle'}>Home</Link></Nav.Link>
             <Nav.Link><Link to={'/redcycle/post-creator'}>Post Creator</Link></Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/register">Sign Up </a>
-            </Nav>
-            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/signin">Log in</a>
-            </Nav>
-            <Nav><a href="http://127.0.0.1:8000/redcycle/api/account/logout">Log out</a>
-            </Nav>
+            <Nav.Link href="/redcycle/api/account/register">Sign Up</Nav.Link>
+            <Nav.Link href="/redcycle/api/account/signin">Log in</Nav.Link>
+            <Nav.Link href="/redcycle/api/account/logout">Log out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

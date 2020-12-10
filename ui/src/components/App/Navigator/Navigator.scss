@@ -1,8 +1,12 @@
 .Navigator {
     .navbar {
         background-color: #CE1126;
-        a {
-            color: white;
+        a, .nav-link {
+            color: white !important;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .navbar-brand {
