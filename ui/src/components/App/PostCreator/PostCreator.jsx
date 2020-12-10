@@ -8,9 +8,9 @@ import { PostCard } from './PostCard/PostCard';
 import { getCurrentUser } from '../../../services/RedcycleApi';
 
 export const PostCreator = () => {
-  const [title, setTitle] = useState()
-  const [description, setDescription] = useState()
-  const [category, setCategory] = useState()
+  const [title, setTitle] = useState("")
+  const [description, setDescription] = useState("")
+  const [category, setCategory] = useState("OTHER")
   const [currentTab, setCurrentTab] = useState("myPosts")
   const [posts, setPosts] = useState([]);
   const [currentUser, setCurrentUser] = useState([]);
@@ -34,6 +34,9 @@ export const PostCreator = () => {
       postCommunityPost(communityPost).then(() => {
         refreshPosts();
         setCurrentTab("myPosts") })
+      setTitle("");
+      setCategory("OTHER");
+      setDescription("");
   }
 
   const deleteAccount = () => {
@@ -67,17 +70,17 @@ export const PostCreator = () => {
       <Form>
         <Form.Group>
           <Form.Label>Title:</Form.Label>
-          <Form.Control type = "text" onChange={(event)=>setTitle(event.target.value)}>
+          <Form.Control type = "text" value={title} onChange={(event)=>setTitle(event.target.value)}>
           </Form.Control>
         </Form.Group>
         <Form.Group>
           <Form.Label>Description:</Form.Label>
-          <Form.Control type = "text" onChange={(event)=>setDescription(event.target.value)}>
+          <Form.Control type = "text" value={description} onChange={(event)=>setDescription(event.target.value)}>
           </Form.Control>
         </Form.Group>
         <Form.Group>
           <Form.Label>Type:</Form.Label>
-          <Form.Control as="select" custom onChange={(event)=>setCategory(event.target.value)}>
+          <Form.Control as="select" value={category} custom onChange={(event)=>setCategory(event.target.value)}>
             <option value="FURNITURE">Furniture</option>
             <option value="ELECTRONICS">Electronics</option>
             <option value="CLOTHES">Clothes</option>
