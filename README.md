@@ -6,8 +6,9 @@
 * User-facing application: `/redcycle`
 * Admin application: `/redcycle/admin`
 * Account actions
-  * Signup: `/redcycle/api/account/signup`
-  * Login: `/redcycle/api/account/login`
+  * Signup: `/redcycle/api/account/register`
+  * Login: `/redcycle/api/account/signin`
+  * Logout: `/redcycle/api/account/logout`
   * Password change: `/redcycle/api/account/password_change`
   * GET `/redcycle/api/account/current`
 * REST endpoints:
@@ -20,7 +21,7 @@ Note: if it's the first time running the project run `npm install` then run `npm
 
 #### Run using Docker
 * Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) if they are not already installed.
-* Run `docker-compose up --build`. It may take a while for the first build. 
+* Run `docker-compose up --build`. It may take a while for the first build.
 * API will be running at 0.0.0.0:8000.
 
 #### Run using Python
@@ -50,4 +51,3 @@ Automated testing is implemented using Cypress.
 * Start API: `docker-compose up --build`
 * Go to `ui` directory: `cd ui`
 * Start Cypress: `npm run cypress`
-

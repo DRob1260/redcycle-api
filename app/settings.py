@@ -132,4 +132,4 @@ REST_FRAMEWORK = {
 
 AUTH_USER_MODEL = 'redcycle.User'
 
-LOGIN_REDIRECT_URL = '/redcycle/post-creator'
+LOGIN_REDIRECT_URL = '/redcycle'
