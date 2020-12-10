@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import './PostCreator.scss';
 import { postCommunityPost } from '../../../services/RedcycleApi';
+import { deleteUserAccount } from '../../../services/RedcycleApi';
 import { Form, Tab, Tabs, Button } from 'react-bootstrap'
 import { getCommunityPostsFromUser } from '../../../services/RedcycleApi';
 import { PostCard } from './PostCard/PostCard';
@@ -30,9 +31,16 @@ export const PostCreator = () => {
       "authorId": currentUser.id,
       "locationId": null
     }
-      postCommunityPost(communityPost).then(() => { 
+      postCommunityPost(communityPost).then(() => {
         refreshPosts();
         setCurrentTab("myPosts") })
+  }
+
+  const deleteAccount = () => {
+    deleteUserAccount(currentUser.id).then(() => {
+       window.location.href = '/redcycle/';
+      alert("account deleted");
+    }, []);
   }
 
     useEffect(() => {
@@ -79,6 +87,14 @@ export const PostCreator = () => {
         </Form.Group>
       </Form>
       <Button variant="danger" onClick={() => {submitCommunity()}}>Post</Button>
+      </Tab>
+      <Tab eventKey="deleteAccount" title="Delete Account">
+        <Form>
+          <Form.Group>
+          <Form.Label>Warning! Clicking delete will permenantly delete your account and all associated community posts.</Form.Label>
+          </Form.Group>
+        </Form>
+        <Button variant="danger" id="delete" onClick={() => {deleteAccount()}}>Delete</Button>
       </Tab>
     </Tabs>
     </div>
