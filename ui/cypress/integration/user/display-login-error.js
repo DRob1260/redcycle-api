@@ -4,7 +4,6 @@ context('display login error', () => {
       cy.get('#id_email').type("Account that doesn't exist");
       cy.get('#id_password').type("Fake password");
       cy.get('button').click();
-      cy.contains('Please enter an email address.');
       cy.url().should('include', '/login')
       cy.getCookie('sessionid').should('not.exist')
     });
