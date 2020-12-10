@@ -7,7 +7,7 @@
 * Admin application: `/redcycle/admin`
 * Account actions
   * Signup: `/redcycle/api/account/register`
-  * Login: `/redcycle/api/account/login`
+  * Login: `/redcycle/api/account/signin`
   * Logout: `/redcycle/api/account/logout`
   * Password change: `/redcycle/api/account/password_change`
   * GET `/redcycle/api/account/current`
